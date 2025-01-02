@@ -1,0 +1,126 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+/* Pricing Table */
+.pricing-table {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2B60AE;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn {
+  background-color: #f5f5f5;
+  color: #2B60AE;
+  border: 1px solid #2B60AE;
+}
+
+.details-btn:hover {
+  background-color: #2B60AE;
+  color: white;
+}
+
+.buy-btn {
+  background-color: #2B60AE;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #1e4e78;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
